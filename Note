@@ -1,0 +1,11 @@
+Create an empty folder
+npm init to generate package.json
+create the index.js in package.json which is the entry point of our application.
+npm install express
+run node index.js from the console
+refactor code and install nodemon --save-dev
+install body-parser
+install cors morgan
+install moongoose
+create models folder
+
