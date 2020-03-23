@@ -5,7 +5,13 @@ const postionRoutes = require('./routes/position');
 const categoryRoutes = require('./routes/category');
 const orderRoutes = require('./routes/order');
 const analyticsRoutes = require('./routes/analytics');
+const mongoose = require('mongoose');
+const keys = require('./config/keys');
 const app = express();
+
+mongoose.connect(keys.mongoURI)
+    .then(() => console.log('MongoDb Connected successfully'))
+    .catch(error => console.log(error));
 
 app.use(require('morgan')('dev'))
 app.use(bodyParser.urlencoded({extended: true}));
