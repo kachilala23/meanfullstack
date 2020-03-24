@@ -1,14 +1,14 @@
-const bcrypt = require('bcryptjs')
-const jwt = require('jsonwebtoken')
-const User = require('../models/User')
-const keys = require('../config/keys')
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const User = require('../models/User');
+const keys = require('../config/keys');
 
 module.exports.login = async function(req, res) {
-    const candidate = await User.findOne({email: req.body.email})
+    const candidate = await User.findOne({email: req.body.email});
 
     if (candidate) {
         // Password check, user exists
-        const passwordResult = bcrypt.compareSync(req.body.password, candidate.password)
+        const passwordResult = bcrypt.compareSync(req.body.password, candidate.password);
         if (passwordResult) {
             // Token generation, passwords match
             const token = jwt.sign({
@@ -35,25 +35,27 @@ module.exports.login = async function(req, res) {
 
 module.exports.register = async function(req, res) {
     // email password
-    const candiadate = await User.findOne({email:req.body.email})
-    if (candiadate) {
+    const candidate = await User.findOne({email: req.body.email});
+
+    if (candidate) {
         // return error if user exist
         res.status(409).json({
-            message: 'This email is already taken. Try another'
+            message: 'This email is already taken. Try another.'
         })
     } else {
         // Need to create a user
-        const salt = bcrypt.genSaltSync(10)
-        const password = req.body.password
+        const salt = bcrypt.genSaltSync(10);
+        const password = req.body.password;
         const user = new User({
             email: req.body.email,
             password: bcrypt.hashSync(password, salt)
         })
+
         try {
             await user.save()
             res.status(201).json(user)
         } catch(e) {
-            // Обработать ошибку
+            errorHandler(res, e)
         }
 
     }
