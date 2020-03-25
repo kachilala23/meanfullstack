@@ -21,3 +21,5 @@ change package.json file in node project to
   },
 and then run the command
 npm install -D concurrently
+
+create a theme folder and import css from the template we are using.
