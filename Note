@@ -9,3 +9,15 @@ install cors morgan
 install moongoose
 create models folder
 
+Created the angular project within the same project called client.
+
+change package.json file in node project to
+"scripts": {
+    "start": "node index",
+    "server": "nodemon index",
+    "client-install": "npm install --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+and then run the command
+npm install -D concurrently

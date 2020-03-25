@@ -14,7 +14,7 @@ module.exports.login = async function(req, res) {
             const token = jwt.sign({
                 email: candidate.email,
                 userId: candidate._id
-            }, keys.jwt, {expiresIn: 60 * 60})
+            }, keys.jwt, {expiresIn: 60 * 60});
 
             res.status(200).json({
                 token: `Bearer ${token}`
@@ -31,7 +31,7 @@ module.exports.login = async function(req, res) {
             message: 'User with such email was not found.'
         })
     }
-}
+};
 
 module.exports.register = async function(req, res) {
     // email password
@@ -49,14 +49,14 @@ module.exports.register = async function(req, res) {
         const user = new User({
             email: req.body.email,
             password: bcrypt.hashSync(password, salt)
-        })
+        });
 
         try {
-            await user.save()
+            await user.save();
             res.status(201).json(user)
         } catch(e) {
             errorHandler(res, e)
         }
 
     }
-}
+};
