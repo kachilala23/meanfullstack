@@ -2,7 +2,7 @@
   <h4>
     <a routerLink="/categories">Categories</a>
     <i class="material-icons">keyboard_arrow_right</i>
-    {{isNew ? 'Add' : 'Edit'}} category
+    {{isNew ? 'Добавить' : 'Редактировать'}} category
   </h4>
   <span>
     <button class="btn btn-small red">
@@ -26,18 +26,26 @@
         *ngIf="form.get('name').invalid && form.get('name').touched"
       >
         <span *ngIf="form.get('name').errors['required']">
-          The category name cannot be empty.
+            The category name cannot be empty.
         </span>
       </span>
     </div>
 
     <div>
+      <input
+        type="file"
+        class="dn"
+        (change)="onFileUpload($event)"
+        #input
+      >
       <button
+        (click)="triggerClick()"
+        [disabled]="form.disabled"
         type="button"
         class="waves-effect waves-light btn orange lighten-2 mb2"
       >
         <i class="material-icons left">backup</i>
-        Upload image
+        Upload Image
       </button>
     </div>
 
@@ -47,13 +55,17 @@
         [disabled]="form.invalid || form.disabled"
         class="waves-effect waves-light btn"
       >
-       Save Changes
+        Save Changes
       </button>
     </div>
   </form>
 
   <div class="col s12 l4 center">
-    <img class="responsive-img" style="height: 200px" src="cake.jpg">
+    <img
+      class="responsive-img h200"
+      [src]="imagePreview"
+      *ngIf="imagePreview"
+    >
   </div>
 </div>
 

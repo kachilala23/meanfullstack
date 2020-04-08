@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b16eb0-948e-46b7-9849-45e56edbdb9c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/shared/services/categories.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/shared/services/categories.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,14 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categories.service.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="categories.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app/shared/services/categories.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="357">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories-form.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -69,14 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categories-form.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="categories-form.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="227">
+              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -93,10 +99,10 @@
       <file leaf-file-name="categories-form.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="527">
+              <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#0#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,10 +167,11 @@
         <option value="$PROJECT_DIR$/controllers/category.js" />
         <option value="$PROJECT_DIR$/client/src/app/categories-page/categories-page.component.ts" />
         <option value="$PROJECT_DIR$/client/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.css" />
+        <option value="$PROJECT_DIR$/client/src/app/shared/services/categories.service.ts" />
         <option value="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.ts" />
         <option value="$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.html" />
-        <option value="$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts" />
-        <option value="$PROJECT_DIR$/client/src/app/shared/services/categories.service.ts" />
       </list>
     </option>
   </component>
@@ -262,6 +269,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fullstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fullstack" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -321,12 +337,12 @@
       <workItem from="1585018878779" duration="14547000" />
       <workItem from="1585126206792" duration="9531000" />
       <workItem from="1585859566456" duration="15316000" />
-      <workItem from="1586313642057" duration="3965000" />
+      <workItem from="1586313642057" duration="5310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63298000" />
+    <option name="totallyTimeSpent" value="64643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -364,9 +380,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/Category.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -638,23 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-page.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -668,23 +664,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.ts">
+    <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/shared/services/categories.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="357">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/categories-page/categories-form/categories-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
         </state>
       </provider>
     </entry>
