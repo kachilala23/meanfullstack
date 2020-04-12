@@ -1,11 +1,15 @@
 <div class="page-title">
   <h4>
-    <a routerLink="/categories">Categories</a>
+    <a routerLink="/categories">Category</a>
     <i class="material-icons">keyboard_arrow_right</i>
-    {{isNew ? 'Добавить' : 'Редактировать'}} category
+    {{isNew ? 'Add' : 'Edit'}} category
   </h4>
   <span>
-    <button class="btn btn-small red">
+    <button
+      *ngIf="!isNew"
+      class="btn btn-small red"
+      (click)="deleteCategory()"
+    >
       <i class="material-icons">delete</i>
     </button>
   </span>
@@ -26,7 +30,7 @@
         *ngIf="form.get('name').invalid && form.get('name').touched"
       >
         <span *ngIf="form.get('name').errors['required']">
-            The category name cannot be empty.
+          The category name cannot be empty.
         </span>
       </span>
     </div>
@@ -45,7 +49,7 @@
         class="waves-effect waves-light btn orange lighten-2 mb2"
       >
         <i class="material-icons left">backup</i>
-        Upload Image
+        Upload image
       </button>
     </div>
 
@@ -55,7 +59,7 @@
         [disabled]="form.invalid || form.disabled"
         class="waves-effect waves-light btn"
       >
-        Save Changes
+        Save changes
       </button>
     </div>
   </form>
